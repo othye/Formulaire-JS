@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Otmane EZ ZIANI" />
+		<title>Contact</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+
+		
+		
+	</head>
+
+	<body class="body text-center">
+
+			<header class="entete text-center">
+				<h1 class="titre"> CONTACTEZ-NOUS </h1>
+				<h2 class="soustitre"> Une question ? N'hésitez pas ! </h2>
+			</header>
+
+			<section class="container">
+
+			<div class="row">
+
+				<section class=" col-md-5 info-contact">
+
+					<article class="text">
+						<span id="asidFormT">Une question, une information, une suggestion ?</span><br>
+						<p id="asidFormP">N'hésitez pas à nous contacter via notre formulaire.</p>
+						<img id="vect" src="img/vect1.png">
+					</article>
+
+				</section>
+
+
+				<section class="col-md-6  form-line">
+					<h2 class="formuleTitre text-center"> Formulaire de contacte :</h2>
+
+					<form name="formul"  onsubmit="return(validate());">
+
+						<div class="form-group">
+							<label class="col-xl-4 lab" for="nom">Nom* :</label>
+							<input class="col-xl-6" type="texte" name="nom" id="nom" />
+						</div>
+
+						<div class="form-group">
+							<label class="col-xl-4 lab" for="prenom">Prénom* :</label>
+							<input class="col-xl-6" type="text" name="prenom"   />
+						</div>
+
+						<div class="form-group">
+							<label class="col-xl-4 lab" for="E-mail" >E-mail* :</label>
+							<input class="col-xl-6" type="text" name="email" id="email"  />
+						</div>
+
+						<div class="form-group">
+							<label class="col-xl-4 lab" for="sexe">Civilité* :</label>
+							<span class="col-xl-4">
+								<input  type="radio" name="genre" /><label class="radi">&nbsp;M.</label>
+								<input  type="radio" name="genre" /><label class="radi">&nbsp;Mlle.</label>
+								<input  type="radio" name="genre" /><label class="radi">&nbsp;Mme.</label>
+							</span>
+							
+						</div>
+
+						<div class="form-group">
+							<label class="col-xl-4 lab"  for="">Votre statut* :  </label>
+							<select class="col-xl-6" name="situation" >
+								<option value="-1"> </option>
+								<option value="1">un professionnel</option>
+								<option value="2">un particulier</option>
+								
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label class="col-xl-4 lab"  for="sujet">Sujet* :</label>
+							<input class="col-xl-6" type="text" name="sujet" id="sujet"  />
+							<span id="misssujet"></span>
+						</div>
+
+						<div class="form-group">
+							<label class="col-xl-4 lab"  for="Message">Votre message* :</label><br>
+							<textarea class="col-xl-12" name="message" id="Message" rows="5" cols="10"></textarea>
+						</div>
+
+						<div class="col-xl-6">
+							<input type="submit" name="envoie" value="Envoyer" id="b_envoie" >
+						</div>
+						
+
+					</form><br>
+					<h6>* Champs obligatoires </h6>
+				</section>
+
+
+
+				
+			</div>
+
+		</section>
+		<script src="form.js"></script>
+
+	</body>
+
+
+</html>
